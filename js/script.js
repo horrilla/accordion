@@ -15,9 +15,19 @@ for(let i = 0; i < accItem.length; i++) {
 			accBody[i].classList.remove('show');
 		}
 
+		for(let z = 0; z < accBody.length; z++) {
+			if(accBody[i] !== accBody[z]) {
+				accBody[z].classList.add('hide');
+				accBody[z].classList.remove('show');
+			}
+		}
+
 	});
+
 }
 
 
 
+
+console.log(accBody);
 
