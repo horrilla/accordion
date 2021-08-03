@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.accordion {
+    box-sizing: border-box;
+    margin: 0 auto;
+    width: 600px;
+    height: auto;
+    font-family: Arial;
+    color: grey
+}
+
+.accordion-item {
+    box-sizing: border-box;
+    width: auto;
+    border: 1px solid grey;
+}
+
+.accordion-item:nth-child(2) {
+    border-bottom-color: white;
+    border-top-color: white;
+}
+
+h2 {
+    margin: 5px 5px;
+}
+
+
+.accordion-body {
+    box-sizing: border-box;
+    width: auto;
+    margin: 5px 5px;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+
