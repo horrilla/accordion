@@ -16,7 +16,7 @@ for(let i = 0; i < accItem.length; i++) {
 			accBody[i].classList.remove('show');
 		}
 
-		for(let y = 0; y < accBody.length; yz++) {
+		for(let y = 0; y < accBody.length; y++) {
 			if(accBody[i] !== accBody[y]) {
 				accBody[y].classList.add('hide');
 				accBody[y].classList.remove('show');
