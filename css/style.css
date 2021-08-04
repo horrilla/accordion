@@ -36,6 +36,7 @@ h2 {
     height: 0;
     width: auto;
     margin: 5px 5px;
+    transition: height 1s linear;
 }
 
 
@@ -46,8 +47,6 @@ h2 {
 
 .show {
     display: block;
-    height: auto;
-    transition: height 2s linear;
 }
 
 
