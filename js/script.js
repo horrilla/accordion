@@ -11,6 +11,7 @@ for(let i = 0; i < accItem.length; i++) {
 		if(accBody[i].classList.contains('hide')) {
 			accBody[i].classList.add('show');
 			accBody[i].classList.remove('hide');
+			accBody[i].style.height = "auto";
 		} else {
 			accBody[i].classList.add('hide');
 			accBody[i].classList.remove('show');
