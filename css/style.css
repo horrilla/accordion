@@ -3,36 +3,42 @@
     padding: 0;
 }
 
+body {
+    background-color: lemonchiffon;
+}
+
 .accordion {
-    box-sizing: border-box;
     margin: 0 auto;
     width: 600px;
     height: auto;
     font-family: Arial;
-    color: grey
+    color: black;
 }
 
 .accordion-item {
-    box-sizing: border-box;
     width: auto;
-    border: 1px solid grey;
+    background-color: burlywood;
 }
 
-.accordion-item:nth-child(2) {
-    border-bottom-color: white;
-    border-top-color: white;
+.accordion-item:hover {
+    cursor: pointer;
 }
+
 
 h2 {
-    margin: 5px 5px;
+    margin: 1px 5px;
+    color: #000;
+    font-size: 20px;
 }
 
 
 .accordion-body {
-    box-sizing: border-box;
+    height: 0;
     width: auto;
     margin: 5px 5px;
 }
+
+
 
 .hide {
     display: none;
@@ -40,6 +46,10 @@ h2 {
 
 .show {
     display: block;
+    height: auto;
+    transition: height 2s linear;
 }
+
+
 
 
