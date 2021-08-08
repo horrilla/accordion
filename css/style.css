@@ -77,21 +77,13 @@ p {
 
 
 /*.accordion-body {*/
-/*    height: 0;*/
+/*    max-height: 0;*/
+/*    overflow: hidden;*/
 /*    width: auto;*/
 /*    margin: 5px 5px;*/
-/*    transition: height 1s linear;*/
+/*    transition: .6s linear;*/
 /*}*/
 
-
-
-/*.hide {*/
-/*    display: none;*/
-/*}*/
-
-/*.show {*/
-/*    display: block;*/
-/*}*/
 
 
 

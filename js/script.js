@@ -15,37 +15,33 @@ for (let i = 0; i < accordion.length; i++) {
 		for(let y = 0; y < accordion.length; y++) {
 			if(accordion[i] !== accordion[y]) {
 				text[y].style.maxHeight = null;
+				text[y].classList.toggle('active');
 			}
 		}
 	});
 }
 
 
-// const accordion = document.querySelector('.accordion'),
-// 	  accItem = accordion.querySelectorAll('.accordion-item'),
-// 	  accBody = accordion.querySelectorAll('.accordion-body');
+// const accItem = document.querySelectorAll('.accordion-item'),
+// 	  accBody = document.querySelectorAll('.accordion-body');
 //
 //
 //
 //
 // for(let i = 0; i < accItem.length; i++) {
-//
 // 	accItem[i].addEventListener('click', function (e) {
-//
-// 		if(accBody[i].classList.contains('hide')) {
-// 			accBody[i].classList.add('show');
-// 			accBody[i].classList.remove('hide');
-// 			accBody[i].style.height = "170px";
+// 		accBody[i].classList.toggle('active');
+// 		if(accBody[i].style.maxHeight) {
+// 			accBody[i].style.maxHeight = null;
 // 		} else {
-// 			accBody[i].classList.add('hide');
-// 			accBody[i].classList.remove('show');
+// 			accBody[i].style.maxHeight = accBody[i].scrollHeight + "px";
 // 		}
 //
 //
 // 		for(let y = 0; y < accBody.length; y++) {
 // 			if(accBody[i] !== accBody[y]) {
-// 				accBody[y].classList.add('hide');
-// 				accBody[y].classList.remove('show');
+// 				accBody[y].style.maxHeight = null;
+//
 // 			}
 // 		}
 //
