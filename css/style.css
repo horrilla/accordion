@@ -5,17 +5,16 @@
 
 .wrapper {
     position: relative;
-    width: 500px;
+    width: 600px;
     height: auto;
     margin: 0 auto;
 }
 
 .accordion {
     height: 30px;
-    width: 500px;
+    width: inherit;
     text-align: left;
     padding: 5px 5px;
-    outline: none;
     border: none;
 }
 
@@ -29,7 +28,7 @@
 }
 
 .active, .accordion:hover {
-    background-color: lightgray;
+    background-color: gray;
 }
 
 .active:after {
@@ -40,7 +39,13 @@
 .text {
     max-height: 0;
     overflow: hidden;
-    transition: .3s linear;
+    transition: .6s linear;
+    background-color: lightgray;
+
+}
+
+p {
+    margin: 7px 7px;
 }
 
 

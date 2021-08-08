@@ -1,15 +1,21 @@
 "use strict";
 
-const accordion = document.querySelectorAll('.accordion');
+const accordion = document.querySelectorAll('.accordion'),
+	  text = document.querySelectorAll('.text');
 
 for (let i = 0; i < accordion.length; i++) {
 	accordion[i].addEventListener('click', () => {
 		accordion[i].classList.toggle('active');
-		let panel = accordion[i].nextElementSibling;
-		if(panel.style.maxHeight) {
-			panel.style.maxHeight = null;
+		if(text[i].style.maxHeight) {
+			text[i].style.maxHeight = null;
 		} else {
-			panel.style.maxHeight = panel.scrollHeight + "px";
+			text[i].style.maxHeight = text[i].scrollHeight + "px";
+		}
+
+		for(let y = 0; y < accordion.length; y++) {
+			if(accordion[i] !== accordion[y]) {
+				text[y].style.maxHeight = null;
+			}
 		}
 	});
 }
