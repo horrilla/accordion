@@ -15,7 +15,7 @@ for (let i = 0; i < accordion.length; i++) {
 		for(let y = 0; y < accordion.length; y++) {
 			if(accordion[i] !== accordion[y]) {
 				text[y].style.maxHeight = null;
-				text[y].classList.toggle('active');
+				accordion[y].classList.remove('active');
 			}
 		}
 	});
